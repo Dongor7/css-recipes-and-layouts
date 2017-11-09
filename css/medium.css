@@ -1,0 +1,9 @@
+@media only screen
+    and (min-device-width: 641px)
+    and (max-device-width: 768px){
+
+    body {
+        background-color: #fd926d;
+    }
+
+}

@@ -1,0 +1,226 @@
+html {
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+/***************HEADER******************/
+.header {
+    grid-template-rows: 190px 200px 450px;
+}
+
+/************UP-SECTION*****************/
+.up-section {
+    grid-template-rows: 1fr 1fr;
+}
+
+.phone {
+    background-color: #FAFAFA;
+    color: #838383;
+}
+
+.navigation {
+    grid-template-columns: 155px auto 100px;
+    background-color: #000000;
+}
+
+.navigation-item:hover {
+    background-color: #444444;
+}
+
+.navigation-item:nth-child(1){
+    justify-content: left;
+    padding-left: 30px;
+}
+
+.navigation-item:nth-child(2){
+    justify-content: center;
+}
+
+.navigation-item .my-account {
+    grid-template-columns: 40px auto;
+    grid-column-gap: 18px;
+}
+
+.navigation-item:nth-child(3){
+    justify-content: right;
+    padding-right: 30px;
+}
+
+.navigation-item span:nth-child(1){
+    justify-content: right;
+}
+
+.navigation-item span:nth-child(2){
+    text-align: left;
+}
+
+.navigation > span:not(:last-child) {
+    height: 95px;
+    border-right: 2px solid #444444;
+}
+/******************************************/
+
+/**************LOGO-SECTION****************/
+.logo-section {
+    color: #000000;
+    font-size: 92px;
+}
+/******************************************/
+
+/*************CART-MENU-SECTION************/
+.down-section {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 23px;
+    padding: 0 15px;
+}
+
+.down-section .cart {
+    border: 1px solid #d6d6d6;
+    background-color: #FAFAFA;
+}
+
+.cart-icon {
+    justify-content: left;
+}
+
+.cart-text {
+    color: #838383;
+    justify-content: right;
+}
+
+.down-section .menu {
+    background-color: #fd926d;
+}
+
+.down-section .menu:hover {
+    background-color: #dd6b44;
+}
+
+.menu-text {
+    justify-content: left;
+}
+
+.menu-icon {
+    justify-content: right;
+}
+
+.down-section-item {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+}
+
+.email {
+    grid-template-columns: auto 95px;
+    padding: 0;
+
+}
+
+.email input {
+    height: 95px;
+    border: none;
+    background-color: #ededed;
+    padding: 0 30px;
+    color: #9f9f9f;
+    font-size: 26px;
+    font-style: italic;
+}
+
+.email .button {
+    background: #fd926d url("../img/plus.png") center no-repeat;
+    justify-content: center;
+    height: 87px;
+}
+
+.email .button:after {
+    content: "";
+    width: 95px;
+    height: 8px;
+    background-color: #dd6b44;
+    justify-content: center;
+    margin-top: 87px;
+    display: block;
+}
+
+.email .button:hover {
+    background-color: #dd6b44;
+    height: 95px;
+}
+
+.social {
+    margin: 0 85px 0 80px;
+    padding: 0;
+    grid-template-columns: repeat(5, 1fr);
+    color: #6c6c6c;
+    font-size: 26px;
+}
+
+.social span:first-child {
+    grid-column: 1 / 3;
+    justify-content: left;
+    height: 88px;
+}
+
+.social-facebook {
+    background: #f7f7f7 url("../img/facebook.png") center no-repeat;
+}
+
+.social-facebook:hover {
+    background: #ededed url("../img/facebook.png") center no-repeat;
+}
+
+.social-twitter {
+    background: #ededed url("../img/twitter.png") center no-repeat;
+}
+
+.social-twitter:hover {
+    background: #f7f7f7 url("../img/twitter.png") center no-repeat;
+}
+
+.social-pinterest {
+    background: #f7f7f7 url("../img/pinterest.png") center no-repeat;
+}
+
+.social-pinterest:hover {
+    background: #ededed url("../img/pinterest.png") center no-repeat;
+}
+/******************************************/
+/******************************************/
+
+/****************CONTENT*******************/
+.content {
+    margin-top: 23px;
+}
+/******************************************/
+
+/*****************FOOTER*******************/
+.footer {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 110px;
+    background-color: #000000;
+}
+
+.footer-icon{
+    padding-left: 30px;
+    justify-content: left;
+}
+
+.footer-contacts {
+    padding-right: 30px;
+    justify-content: right;
+    color: #8d8d8d;
+    font-size: 24px;
+}
+/******************************************/

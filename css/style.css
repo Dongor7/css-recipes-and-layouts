@@ -1,0 +1,14 @@
+@import "small.css" small;
+
+@media (max-device-width: 640px) {
+
+}
+
+@media (min-device-width: 641px)
+    and (max-device-width: 768px){
+    @import "medium.css";
+}
+
+@media (min-device-width: 769px){
+    @import "original.css";
+}
