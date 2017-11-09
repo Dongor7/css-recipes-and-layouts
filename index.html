@@ -2,59 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Layout</title>
-    <link rel="stylesheet" href="css/small.css"/>
-    <link rel="stylesheet" href="css/medium.css"/>
-    <link rel="stylesheet" href="css/original.css"/>
+    <title>Title</title>
+    <link href="css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
     <header class="header grid">
-
-        <div class="header-phone grid">
-            <p>CUSTOM CARE: 123 456 789</p>
-        </div>
-
-        <nav class="navigation grid">
-            <div class="currency grid">
-                <p>$ US <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+        <section class="up-section grid">
+            <div class="phone grid">
+                <p>CUSTOM CARE: 123 456 789</p>
             </div>
-            <div class="account grid">
-                   <span>
-                       <img src="img/user.png">
-                   </span>
-                <span>
-                    <p class="grid"> MY ACCOUNT</p>
+            <nav class="navigation grid">
+                <span class="navigation-item grid">
+                    <p>$ US <i class="fa fa-caret-down" aria-hidden="true"></i></p>
                 </span>
+                <span class="navigation-item grid">
+                    <span class="my-account grid">
+                        <span class="grid">
+                            <img src="img/user.png">
+                        </span>
+                        <span class="grid">
+                            <p> MY ACCOUNT</p>
+                        </span>
+                    </span>
+                </span>
+                <span class="navigation-item grid">
+                    <img src="img/search.png">
+                </span>
+            </nav>
+        </section>
 
-            </div>
-            <div class="search grid">
-                <i class="fa fa-search fa-rotate-90" aria-hidden="true"></i>
-            </div>
-        </nav>
+        <section class="logo-section grid">
+            <h1>l<img src="img/logo.png">kshop</h1>
+        </section>
 
-        <div class="logo grid">
-            <div class="logo-wrapper grid">
-                <h1>l<img src="img/logo.png">kshop</h1>
+        <section class="down-section grid">
+            <div class="down-section-item cart grid">
+                <span class="cart-icon grid">
+                    <img src="img/cart.png">
+                </span>
+                <span class="cart-text grid">
+                    <p>0 ITEMS  |  $ 0</p>
+                </span>
             </div>
-        </div>
-
-        <div class="cart grid">
-            <div>
-                <img src="img/cart.png">
+            <div class="down-section-item menu grid">
+                <span class="menu-text grid">
+                    <p>MENU</p>
+                </span>
+                <span class="menu-icon grid">
+                    <img src="img/menu-bar.png">
+                </span>
             </div>
-            <div>
-                <p>0 ITEMS  |  $ 0</p>
+            <div class="down-section-item email grid">
+                <input type="email grid" value="Your email address">
+                <div class="button"></div>
             </div>
-        </div>
-
-        <div class="menu grid">
-            <p>MENU</p>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-
+            <div class="down-section-item social grid">
+                <span class="grid">
+                    <p>Find us here</p>
+                </span>
+                <span class="social-facebook"></span>
+                <span class="social-twitter"></span>
+                <span class="social-pinterest"></span>
+            </div>
+        </section>
     </header>
+
+    <section class="content">
+
+        <div class="content-hot">
+
+        </div>
+        <div class="content-clearance">
+
+        </div>
+    </section>
+
+    <footer class="footer grid">
+        <span class="footer-icon grid">
+            <img src="img/menu-bar.png">
+        </span>
+        <span class="footer-contacts grid">
+            <p>© LookShop.com</p>
+            <p>ALL Rights Reserved</p>
+        </span>
+    </footer>
 
 </body>
 </html>
